@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.parent-div {
+    border: 2px solid black;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.parent-div div {
+    border: 2px solid red;
+
+    /* 👇 This centers X and O */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
